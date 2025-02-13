@@ -11,5 +11,16 @@ public class Calculator{
 
         System.out.println(first + second);
 
+        System.out.println("Would you like to perform addition or subtraction");
+
+        String firstChoice = mainScan.nextLine();
+
+        if(firstChoice.toLowerCase().equals("addition")){
+            System.out.println(first + second);
+        }else if(firstChoice.toLowerCase().equals("subtraction")){
+            System.out.println(first - second);
+        }
+        
+
     }
 }
