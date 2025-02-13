@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 public class Calculator{
     public static void main(String[] args){
@@ -8,6 +10,7 @@ public class Calculator{
 
         int first = mainScan.nextInt();
         int second = mainScan.nextInt();
+        mainScan.nextLine();
 
         System.out.println(first + second);
 
@@ -15,14 +18,14 @@ public class Calculator{
 
         String firstChoice = mainScan.nextLine();
 
-        if(firstChoice.toLowerCase().equals("addition")){
+        if(firstChoice.equals("addition")){
             System.out.println(first + second);
         }else if(firstChoice.toLowerCase().equals("subtraction")){
             System.out.println(first - second);
         }
 
      
-
+      
         System.out.println("Would you like to perform multiplication or division?");
 
         String secondChoice = mainScan.nextLine();
